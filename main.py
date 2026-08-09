@@ -110,5 +110,43 @@ elif choice == "3":
 
     else:
         print("Invalid conversion choice!")
+# Time Converter
+elif choice == "4":
+    print("\n--- Time Converter ---")
+    print("1. Hours to Minutes")
+    print("2. Minutes to Hours")
+    print("3. Minutes to Seconds")
+    print("4. Seconds to Minutes")
+    print("5. Hours to Seconds")
+    print("6. Seconds to Hours")
 
+    conversion = input("\nEnter conversion: ")
+    value = float(input("Enter value: "))
+
+    if conversion == "1":
+        result = value * 60
+        print("Result:", result, "minutes")
+
+    elif conversion == "2":
+        result = value / 60
+        print("Result:", result, "hours")
+
+    elif conversion == "3":
+        result = value * 60
+        print("Result:", result, "seconds")
+
+    elif conversion == "4":
+        result = value / 60
+        print("Result:", result, "minutes")
+
+    elif conversion == "5":
+        result = value * 3600
+        print("Result:", result, "seconds")
+
+    elif conversion == "6":
+        result = value / 3600
+        print("Result:", result, "hours")
+
+    else:
+        print("Invalid conversion choice!")
 
