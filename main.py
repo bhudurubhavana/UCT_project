@@ -1,0 +1,54 @@
+print("================================")
+print("        UNIT CONVERTER")
+print("================================")
+
+print("\n1. Length")
+print("2. Weight")
+print("3. Temperature")
+print("4. Time")
+print("5. Volume")
+
+choice = input("\nEnter your choice: ")
+
+# Length Converter
+if choice == "1":
+    print("\n--- Length Converter ---")
+    print("1. Meter to Kilometer")
+    print("2. Kilometer to Meter")
+    print("3. Meter to Centimeter")
+    print("4. Centimeter to Meter")
+    print("5. Kilometer to Miles")
+    print("6. Miles to Kilometer")
+
+    conversion = input("\nEnter conversion: ")
+    value = float(input("Enter value: "))
+
+    if conversion == "1":
+        result = value / 1000
+        print("Result:", result, "km")
+
+    elif conversion == "2":
+        result = value * 1000
+        print("Result:", result, "m")
+
+    elif conversion == "3":
+        result = value * 100
+        print("Result:", result, "cm")
+
+    elif conversion == "4":
+        result = value / 100
+        print("Result:", result, "m")
+
+    elif conversion == "5":
+        result = value * 0.621371
+        print("Result:", result, "miles")
+
+    elif conversion == "6":
+        result = value / 0.621371
+        print("Result:", result, "km")
+
+    else:
+        print("Invalid conversion choice!")
+
+else:
+    print("\nThis converter is coming soon!")
