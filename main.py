@@ -149,4 +149,32 @@ elif choice == "4":
 
     else:
         print("Invalid conversion choice!")
+# Volume Converter
+elif choice == "5":
+    print("\n--- Volume Converter ---")
+    print("1. Liter to Milliliter")
+    print("2. Milliliter to Liter")
+    print("3. Liter to Gallon")
+    print("4. Gallon to Liter")
 
+    conversion = input("\nEnter conversion: ")
+    value = float(input("Enter value: "))
+
+    if conversion == "1":
+        result = value * 1000
+        print("Result:", result, "mL")
+
+    elif conversion == "2":
+        result = value / 1000
+        print("Result:", result, "L")
+
+    elif conversion == "3":
+        result = value * 0.264172
+        print("Result:", result, "gallons")
+
+    elif conversion == "4":
+        result = value / 0.264172
+        print("Result:", result, "L")
+
+    else:
+        print("Invalid conversion choice!")
